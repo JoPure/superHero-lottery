@@ -1,0 +1,620 @@
+ul, li, div, p, body {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: Tahoma, "Microsoft YaHei", "Helvetica Neue", Arial, HelveticaNeue, Helvetica-Neue, Helvetica, "BBAlpha Sans", sans-serif;
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 100%;
+}
+
+@media screen and (min-width: 360px) and (max-width: 374px) and (orientation: portrait) {
+    html, body {
+        font-size: 70.3125%
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 399px) and (orientation: portrait) {
+    html, body {
+        font-size: 73.2421875%
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 413px) and (orientation: portrait) {
+    html, body {
+        font-size: 78.125%
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width: 480px) and (orientation: portrait) {
+    html, body {
+        font-size: 80.859375%
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 639px) and (orientation: portrait) {
+    html, body {
+        font-size: 93.75%
+    }
+}
+
+.ipop {
+    position: relative;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.ipop img {
+    display: block;
+    width: 100%;
+}
+
+.link {
+    position: absolute;
+    width: 30%;
+}
+
+.link_01 {
+    top: 45%;
+    left: 7%;
+    z-index: 2;
+}
+
+.link_02 {
+    top: 48%;
+    left: 35%;
+    z-index: 2;
+}
+
+.link_03 {
+    top: 45%;
+    right: 7%;
+    z-index: 2;
+}
+
+.link_04 {
+    top: 66%;
+    left: 19%;
+}
+
+.link_05 {
+    top: 66%;
+    right: 19%;
+}
+
+.back_home {
+    position: absolute;
+    bottom: 7%;
+    left: 41%;
+    width: 18%;
+    height: 22%;
+}
+
+.userMessage {
+    text-align: center;
+    float: left;
+    font-size: 2.2rem;
+    line-height: 2rem;
+}
+
+.logOut {
+    display: none;
+    position: absolute;
+    right: 0%;
+}
+
+.logOut img {
+    width: 6rem;
+    margin: 0 1rem;
+}
+
+.hover_link, .hover_init {
+    display: inline-block;
+}
+
+.hover_link:hover .hover_show,
+.hover_init:hover .hover_show {
+    display: inline-block;
+}
+
+.hover_link .hover_show,
+.hover_link:hover .hover_hide,
+.hover_init .hover_show,
+.hover_init:hover .hover_hide {
+    display: none;
+}
+
+/*遮罩*/
+.blackBg {
+    height: 100%;
+    width: 100%;
+    z-index: 888;
+    position: fixed;
+    top: 0;
+    background: #000;
+    opacity: .6;
+    -moz-opacity: .6;
+    filter: alpha(opacity=60);
+    display: none;
+}
+
+.codeBox,
+.loginForm {
+    z-index: 1001;
+    position: fixed;
+    top: 30%;
+    background-color: #ffffe0;
+    width: 30rem;
+    left: 48%;
+    margin-left: -14rem;
+    border-radius: 10px;
+    display: none;
+}
+
+.loginBox {
+    width: 100%;
+    height: 100%;
+}
+
+.loginBox input {
+    width: 80%;
+    height: 2rem;
+    margin: 0 auto 4%;
+    border-radius: 2px;
+    text-indent: 1em;
+    border: 1px solid #d78300;
+    color: #d78300;
+    display: block;
+}
+
+.login-p {
+    width: 100%;
+}
+
+.tabs-p,
+.login-p {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.tabs-p {
+    margin-top: 2.5rem;
+}
+
+.login-p img {
+    width: 19.2rem;
+    margin: 0 2rem;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.3rem;
+    cursor: pointer
+}
+
+.p1 {
+    margin-bottom: 3%;
+    text-align: center;
+    color: #d78300;
+    font-size: 1.2rem
+}
+
+.tabs-p img {
+    width: 12rem;
+    margin: 0 .25rem;
+}
+
+.codeBox h2 {
+    font-size: 1.1rem;
+    color: #853b09;
+}
+
+.codeBox .codeContent .codeTit {
+    color: #853b09;
+    font-size: 1.5rem;
+}
+
+.codeBox .codeContent,
+.codeBox .award {
+    margin: 5% 8%;
+}
+
+.codeBox .resultBox {
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    background: #ffb848;
+    color: #853b09;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin: 2% 0;
+    text-align: center;
+}
+
+.codeBox .codeContent p {
+    color: #853b09;
+    font-size: 1rem;
+    margin-bottom: 2%;
+}
+
+.codeBox .codeContent .codeTip {
+    color: #ec0e0e;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.awardImg {
+    float: left;
+    text-align: center;
+}
+
+.awardImg img {
+    width: 50%;
+}
+
+/*抽奖页面*/
+.lottery_back_home {
+    position: absolute;
+    top: 86%;
+    left: 39%;
+    width: 22%;
+    height: 5%;
+}
+
+.go_round {
+    position: absolute;
+    width: 25.7%;
+    height: 19%;
+    top: 53.5%;
+    left: 37.25%;
+}
+
+.go_round_box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.go_round img {
+    height: 100%;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.go {
+    position: absolute;
+    top: 56.6%;
+    left: 41.25%;
+    width: 17.5%;
+}
+
+.canLottery {
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+    line-height: 1rem;
+    top: 24%;
+    left: 10%;
+    float: left;
+}
+
+.awardTime {
+    position: absolute;
+    color: red;
+    top: 20.5%;
+    left: 55%;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+/**蛋糕页面*/
+.cake_btn {
+    position: absolute;
+    top: 10%;
+    width: 10%;
+}
+
+.cake_btn_01 {
+    top: 48%;
+    left: 18%;
+}
+
+.cake_btn_02 {
+    top: 60.5%;
+    left: 14.5%;
+}
+
+.cake_btn_03 {
+    top: 83%;
+    left: 7%;
+}
+
+.cake_btn_04 {
+    top: 46%;
+    left: 79%;
+}
+
+.cake_btn_05 {
+    top: 56%;
+    left: 86%;
+}
+
+.cake_btn_06 {
+    top: 68%;
+    left: 86%;
+}
+
+.cake_btn_07 {
+    top: 84%;
+    left: 83%;
+}
+
+.cake_btn2 {
+    position: absolute;
+    width: 15%;
+    right: 6%;
+}
+
+.cake_btn2_01 {
+    top: 21%;
+}
+
+.cake_btn2_02 {
+    top: 31%;
+}
+
+.cake_btn2_03 {
+    top: 42%;
+}
+
+.cake_btn2_04 {
+    top: 52%;
+}
+
+.cake_btn2_05 {
+    top: 61.5%;
+}
+
+.cake_btn2_06 {
+    top: 72%;
+}
+
+.cake_btn2_07 {
+    top: 82%;
+}
+
+.cake_btn2_08 {
+    top: 93%;
+}
+
+.cream_box {
+    position: absolute;
+    left: 75%;
+    top: 25.8%;
+    width: 5.7%;
+    padding: 1%;
+    text-align: center;
+    height: 2.8%;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.diamond_box {
+    position: absolute;
+    left: 83%;
+    top: 12.3%;
+    width: 10.7%;
+    height: 2.8%;
+    padding: 1%;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 640px) and (orientation: portrait) {
+    .cream_box,
+    .diamond_box {
+        font-size: 2.5rem;
+    }
+}
+
+/*fight页面*/
+.fight_back_home {
+    position: absolute;
+    bottom: 7%;
+    left: 41%;
+    width: 18%;
+    height: 22%;
+}
+
+.fight_btn {
+    position: absolute;
+    width: 18%;
+    left: 41%;
+}
+
+.fight_btn_01 {
+    top: 92%;
+}
+
+.fight_btn_02 {
+    top: 29.5%;
+}
+
+.fight_btn_03 {
+    top: 65.5%;
+}
+
+/*friend页面*/
+.friends_back_home {
+    position: absolute;
+    top: 59%;
+    left: 40%;
+    width: 22%;
+    height: 7%;
+}
+
+.friends_btn {
+    position: absolute;
+    width: 30%;
+    left: 35%;
+}
+
+.friends_btn_01 {
+    top: 18%;
+}
+
+.friends_btn_02 {
+    top: 0;
+    left: 15%;
+}
+
+.friends_btn_03 {
+    top: 0%;
+    left: 55%;
+}
+
+/*提示箭头*/
+.top {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    border-radius: 5px;
+    background: rgba(160, 82, 45, 0.8) url(../img/top-arrow.svg) no-repeat center 50%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.top.cd-is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.top.cd-fade-out {
+    opacity: .5;
+}
+
+.no-touch .top:hover {
+    background-color: #A0522D;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 320px) {
+    .top {
+        height: 30px;
+        width: 30px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .friend2Time {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .top {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .friend2Time {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .top {
+        height: 60px;
+        width: 40px;
+        right: 30px;
+        bottom: 30px;
+    }
+
+    .friend2Time {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+}
+
+/*时间展示*/
+.Time {
+    color: red;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    font-size: 10%;
+    line-height: 1rem;
+}
+
+.friendTime {
+    color: red;
+    position: absolute;
+    top: 52%;
+    left: 40%;
+    /*font-size: 1rem;*/
+    /*line-height: 1rem;*/
+}
+
+.friend2Time {
+    color: red;
+    position: absolute;
+    top: 49.5%;
+    left: 65%;
+    /*font-size: 1rem;*/
+    /*line-height: 1rem;*/
+}
+
+.cakeTime {
+    color: red;
+    position: absolute;
+    top: 27%;
+    left: 43%;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+}
+
+.chargeTime {
+    color: red;
+    position: absolute;
+    top: 12%;
+    left: 38%;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+}
+
+.chargeTime2 {
+    color: red;
+    position: absolute;
+    top: 14%;
+    left: 38%;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+}
+
+.time {
+    color: red;
+    position: absolute;
+    top: 21.5%;
+    left: 50%;
+    font-size: 1rem;
+    line-height: 1rem;
+}
